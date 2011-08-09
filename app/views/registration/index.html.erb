@@ -1,0 +1,21 @@
+<h1>Регистрация</h1>
+<% @errors.each do |error| %>
+  <div class="error"><%=error%></div>
+<% end %>
+<%= form_tag(:controller => "registration", :action => "register") do %>
+  <div class="reg">
+    <div>Код инвайта</div>
+    <div><input name="code" type="text"></div>
+  </div>
+  <div class="reg">
+    <div>Почта</div>
+    <div><input name="email" type="text"></div>
+  </div>
+  <div class="reg">
+    <div>Пароль</div>
+    <div><input name="password" type="password"></div>
+  </div>
+  <div class="reg">
+    <input type="submit" value="Зарегистрироваться">
+  </div>
+<% end %>  

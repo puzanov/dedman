@@ -1,0 +1,17 @@
+.reg {padding-top:10px;}
+.error {padding-top:10px; padding-bottom:10px; color:red;}
+
+body {background-color:#4C4240;}
+h1 {text-align:center;}
+
+#main {margin-left:auto;margin-right:auto;width:800px;}
+#header {height:50px;}
+#content {min-height:400px;background-color:#322D36;color:#868C5A;padding:10px;}
+#footer {height:200px;}
+
+.content {padding-top:10px;}
+
+#anonymous-forms .left {float:left;padding-left:150px;}
+#anonymous-forms .right {width:290px;float:right;border-left:1px solid #868C5A;padding-left:100px;}
+#anonymous-forms .link {padding-top:100px;font-size:20px;padding-bottom:150px;}
+#anonymous-forms a {color:#D6D4AB;}
