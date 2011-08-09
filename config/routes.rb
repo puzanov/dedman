@@ -1,16 +1,11 @@
 Dedman::Application.routes.draw do
   get "home/index"
-
-  match "registration" => "registration#index"
   
-  post "registration/register"
-
-  get "invites/generate"
-
-  get "invites/all"
-
+  get "register/ok"
+  get  "register" => "register#index"
+  post "register" => "register#try"
+  
   get "intives/generate"
-
   get "intives/all"
 
   root :to => "home#index"

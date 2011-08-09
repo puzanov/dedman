@@ -1,0 +1,29 @@
+<h1>Регистрация</h1>
+<div class="content register">
+
+  <% unless @errors.nil? %>
+    <div class="errors">
+    <% @errors.each do |error| %>
+      <div><%=error%></div>
+    <% end %>
+    </div>
+  <% end %>
+  
+  <form method="post" action="/register">
+    <div class="field">
+      <div class="label">Код инвайта</div>
+      <div><input type="text" name="user[invite]"></div>
+    </div>
+    <div class="field">
+      <div class="label">Почта</div>
+      <div><input type="text" name="user[email]"></div>
+    </div>
+    <div class="field">
+      <div class="label">Пароль</div>
+      <div><input type="password" name="user[password]"></div>
+    </div>
+    <div class="field">
+      <div class="submit"><input type="submit" value="Попробовать"></div>
+    </div>
+  </form>
+</div>
